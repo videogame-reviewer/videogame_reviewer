@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS games_db;
+DROP DATABASE IF EXISTS museum_db;
+CREATE DATABASE museum_db;
+USE museum_db;
 
-CREATE DATABASE games_db;
-
-USE games_db;
