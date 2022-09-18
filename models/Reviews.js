@@ -11,6 +11,7 @@ Reviews.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    //remove filename when down testing
     filename: {
     type: DataTypes.STRING,
     allowNull: false,

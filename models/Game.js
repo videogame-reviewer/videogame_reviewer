@@ -16,13 +16,17 @@ Game.init(
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     genres: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    // filename: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   },
     review_id: {
       type: DataTypes.INTEGER,
       references: {
