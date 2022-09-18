@@ -26,7 +26,7 @@ Game.init(
     review_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'review',
+        model: 'reviews',
         key: 'id',
       },
     },

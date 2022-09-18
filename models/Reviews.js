@@ -11,6 +11,10 @@ Reviews.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    filename: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    },
     description: {
       type: DataTypes.STRING,
       allowNull: false,

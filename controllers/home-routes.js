@@ -1,24 +1,24 @@
 const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+const { Game, Reviews } = require('../models');
 
 // GET all galleries for homepage
 router.get('/', async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findAll({
+    const dbGameData = await Game.findAll({
       include: [
         {
-          model: Painting,
+          model: Reviews,
           attributes: ['filename', 'description'],
         },
       ],
     });
 
-    const galleries = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true })
+    const games = dbGameData.map((game) =>
+      game.get({ plain: true })
     );
 
     res.render('homepage', {
-      galleries,
+      games,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
