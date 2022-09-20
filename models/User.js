@@ -16,10 +16,12 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    
     username: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -28,18 +30,12 @@ User.init(
         isEmail: true,
       },
     },
+
     password: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         len: [6],
-      },
-    },
-    reviews_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'reviews',
-        key: 'id',
       },
     },
   },

@@ -11,14 +11,14 @@ Reviews.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    //remove filename when down testing
-    filename: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    },
-    description: {
+    // //remove filename when down testing
+    // filename: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    comment: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     game_id: {
       type: DataTypes.INTEGER,

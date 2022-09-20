@@ -2,6 +2,10 @@ const User = require('./User');
 const Game = require('./Game');
 const Reviews = require('./Reviews');
 
+User.hasMany(Reviews, {
+  foreignKey: 'reviews_id'
+})
+
 Game.hasMany(Reviews, {
   foreignKey: 'reviews_id',
 });
