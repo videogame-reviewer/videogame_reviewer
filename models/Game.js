@@ -11,29 +11,38 @@ Game.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    
     name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
     description: {
       type: DataTypes.TEXT,
       allowNull: false,
     },
+
     genres: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
+    link: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
     // filename: {
     //   type: DataTypes.STRING,
     //   allowNull: false,
     //   },
-    review_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'reviews',
-        key: 'id',
-      },
-    },
+
+    // review_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'reviews',
+    //     key: 'id',
+    //   },
+    // },
   },
   {
     sequelize,
