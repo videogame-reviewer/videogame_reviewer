@@ -39,7 +39,7 @@ Reviews.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'reviews',
+    modelName: 'review',
   }
 );
 
