@@ -22,12 +22,12 @@ Game.init(
       allowNull: false,
     },
 
-    genres: {
+    genre: {
       type: DataTypes.STRING,
       allowNull: false,
     },
 
-    link: {
+    purchaselink: {
       type: DataTypes.TEXT,
       allowNull: false
     }
