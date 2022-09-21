@@ -5,12 +5,12 @@ const { Game, Reviews } = require('../models');
 router.get('/', async (req, res) => {
   try {
     const dbGameData = await Game.findAll({
-      include: [
-        {
-          model: Reviews,
-          attributes: ['filename', 'description'],
-        },
-      ],
+      // include: [
+      //   {
+      //     model: Reviews,
+      //     attributes: ['description'],
+      //   },
+      // ],
     });
 
     const games = dbGameData.map((game) =>
@@ -28,30 +28,26 @@ router.get('/', async (req, res) => {
 });
 
 // GET one gallery
-router.get('/gallery/:id', async (req, res) => {
+router.get('/game/:id', async (req, res) => {
   // If the user is not logged in, redirect the user to the login page
   if (!req.session.loggedIn) {
     res.redirect('/login');
   } else {
     // If the user is logged in, allow them to view the gallery
     try {
-      const dbGalleryData = await Gallery.findByPk(req.params.id, {
-        include: [
-          {
-            model: Painting,
-            attributes: [
-              'id',
-              'title',
-              'artist',
-              'exhibition_date',
-              'filename',
-              'description',
-            ],
-          },
-        ],
+      const dbGameData = await Game.findByPk(req.params.id, {
+        // include: [
+        //   {
+        //     model: Reviews,
+        //     attributes: [
+        //       'id',
+        //       'description',
+        //     ],
+        //   },
+        // ],
       });
-      const gallery = dbGalleryData.get({ plain: true });
-      res.render('gallery', { gallery, loggedIn: req.session.loggedIn });
+      const game = dbGameData.get({ plain: true });
+      res.render('game', { game, loggedIn: req.session.loggedIn });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
