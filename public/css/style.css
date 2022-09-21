@@ -19,9 +19,12 @@ body {
   background-color: var(--quatrinary);
 }
 
+/* Home & Login */
 a {
-  color: var(--dark);
+  color: black;
+  font-weight: bold;
   text-decoration: none;
+  
 }
 
 a:visited {
@@ -40,10 +43,11 @@ main {
   flex-wrap: wrap;
   flex-grow: 1;
 }
-
+/* nav bar  */
 nav {
   display: flex;
   background-color: var(--secondary);
+  justify-items: right;
 }
 
 nav a {
@@ -66,6 +70,7 @@ nav a:hover {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color:black;
   
 }
 
