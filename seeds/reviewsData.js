@@ -62,6 +62,6 @@ const reviewsdata = [
   },
 ];
 
-const seedReviews = () => Reviews.bulkCreate(reviewsdata);
+const seedReviews = () => Review.bulkCreate(reviewsdata);
 
 module.exports = seedReviews;
