@@ -29,7 +29,7 @@ a:visited {
 }
 
 header {
-  padding: 45px;
+  padding: 4px;
   text-align: center;
   background: var(--primary);
   color: var(--light);
@@ -56,6 +56,11 @@ nav a {
 nav a:hover {
   border-radius: 10px;
   color: white;
+}
+.logo{
+display: flex;
+height: auto;
+width: 10%;
 }
 
 .games {
