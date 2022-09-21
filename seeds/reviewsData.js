@@ -5,13 +5,13 @@ const reviewsdata = [
     game_id: 1,
     // filename: '01-blossoming-apricot.jpg',
     comment:
-      'Branches with pink apricot blossoms against a blue background.',
+      'Great Game.',
     user_id: 1,
   },
   {
     game_id: 1,
     // filename: '02-cosmos-flowers.jpg',
-    comment: 'Pink cosmos flowers against a blue sky.',
+    comment: 'An all time classic!.',
     user_id: 2,
   },
   {
