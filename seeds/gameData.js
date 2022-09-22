@@ -34,7 +34,7 @@ const gamedata = [
     description: 'Fortnite is a survival game where 100 players fight against each other in player versus player combat to be the last one standing. It is a fast-paced, action-packed game, not unlike The Hunger Games, where strategic thinking is a must to survive.',
     genre: 'Battle-Royale',
     purchaselink: 'https://store.epicgames.com/en-US/p/fortnite',
-    filename: '05_fornite.jpg',
+    filename: '05_fortnite.jpg',
   },
   {
     name: 'Grand Theft Auto V',
@@ -328,7 +328,7 @@ const gamedata = [
     description: 'Explore distant lands, fight bigger and more awe-inspiring machines, and encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon. The land is dying. Vicious storms and an unstoppable blight ravage the scattered remnants of humanity, while fearsome new machines prowl their borders. Life on Earth is hurtling towards another extinction, and no one knows why. ts up to Aloy to uncover the secrets behind these threats and restore order and balance to the world. Along the way, she must reunite with old friends, forge alliances with warring new factions and unravel the legacy of the ancient past all the while trying to stay one step ahead of a seemingly undefeatable new enemy.',
     genre: 'Action-Adventure RPG',
     purchaselink: 'https://www.gamestop.com/video-games/products/horizon-forbidden-west-launch-edition---playstation-5/324796.html',
-    filename: '47_horizon_forbbiden.jpg',
+    filename: '47_horizon_forbidden.jpg',
   },
   {
     name: 'Star Wars Jedi: Fallen Order',
