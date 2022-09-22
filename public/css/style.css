@@ -19,6 +19,25 @@ body {
   background-color: var(--quatrinary);
 }
 
+#mainHeader{
+  color: var(--light);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: var(--tertiary);
+  padding: 0.625rem;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+
+#genreHB {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px var(--secondary);
+  background-color: #5b2e85;
+  font-size: 20px;
+  color: white;
+}
+
 a {
   color: var(--dark);
   text-decoration: none;
@@ -65,13 +84,12 @@ width: 10%;
 
 .games {
   flex: 4;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   padding: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  
 }
 
 .btn-no-style {
@@ -86,8 +104,9 @@ width: 10%;
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  width: 300px;
+  height: 400px;
 }
 
 /* .painting {
@@ -109,7 +128,7 @@ img {
   flex: 0 1 300px;
   /* border: 7px double var(--primary); */
   border-radius: 5px;
-  background-color: var(--light);
+  background-color: var(--primary);
   color: var(--dark);
 }
 
@@ -152,6 +171,8 @@ img {
   padding-bottom: 30px;
   padding-right: 100px;
   padding-left: 100px;
+  background-color: #5b2e85;
+  color: white;
 }
 
 /* LAYOUT */
