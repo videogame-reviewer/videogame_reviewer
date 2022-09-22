@@ -7,20 +7,26 @@
     {{> reviews-details}}
     {{/each}}
     <div class="gDescription">{{game.description}}</div>
-    <div class="gGenre">Genre: {{game.genres}}</div>
+    <div class="gGenre">Genre: {{game.genre}}</div>
   </section>
 </section>
 
+<section id="comments">
+    {{#if loggedIn}}
   <section class="top">
-  <div class="gButtons">
-    <button class="buy"> Press here to buy!</button>
-    <button class="makeReview">Leave a review.</button>
-  </div>
+    <div class="gButtons">
+      <button class="buy"> Press here to buy!</button>
+      <button class="makeReview">Leave a review.</button>
+    </div>
   </section>
 
   <section class="re">
-  <div class="leaveReview">
-    <h5>What do ya think about it?</h5>
-    <input type="text" name="ReviewText">
-  </div>
+    <div class="leaveReview">
+      <h5>What do ya think about it?</h5>
+      <input type="text" name="ReviewText">
+    </div>
   </section>
+    {{else}}
+      <a href="/login"></a>
+    {{/if}}
+</section>
