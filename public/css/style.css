@@ -20,6 +20,9 @@ body {
 }
 
 #mainHeader{
+  display: flex;
+  justify-content: center;
+  flex-grow: 4;
   color: var(--light);
   font-weight: bold;
   text-transform: uppercase;
@@ -48,6 +51,8 @@ a:visited {
 }
 
 header {
+  display: flex;
+  flex-direction: row;
   padding: 4px;
   text-align: center;
   background: var(--primary);
@@ -62,6 +67,8 @@ main {
 
 nav {
   display: flex;
+  flex-direction: row;
+  align-content: flex-end;
   background-color: var(--secondary);
 }
 
