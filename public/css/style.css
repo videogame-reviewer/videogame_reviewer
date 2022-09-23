@@ -21,16 +21,25 @@ body {
 
 #mainHeader{
   color: var(--light);
+  display: flex;
+  justify-content: center;
+  flex-grow: 4;
   font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
+  font-size: 30px;
   background-color: var(--tertiary);
-  padding: 0.625rem;
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+ 
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  text-align: center;
+  background: var(--primary);
+  color: var(--light);
 }
 
 #genreHB {
-  text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 2px 2px 5px var(--secondary);
   background-color: #5b2e85;
@@ -47,13 +56,6 @@ a:visited {
   color: inherit;
 }
 
-header {
-  padding: 4px;
-  text-align: center;
-  background: var(--primary);
-  color: var(--light);
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +64,12 @@ main {
 
 nav {
   display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 8%;
+  padding-bottom: 1%;
+  padding-left: 85%;
+  font-size:larger;
   background-color: var(--secondary);
 }
 
@@ -77,9 +85,9 @@ nav a:hover {
   color: white;
 }
 .logo{
-display: flex;
-height: auto;
-width: 10%;
+height: 150%;
+width: 150%;
+margin-left: 5%;
 }
 
 .games {

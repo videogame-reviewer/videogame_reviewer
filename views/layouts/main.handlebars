@@ -12,12 +12,10 @@
 
 <body>
   <header>
-    <h1 id ="mainHeader">Remote Reviews
-     <div> <img class='logo' src="/images/4000_4_10.png"></div>
-    </h1>
+    <h1 id ="mainHeader">Remote Reviews</h1>
+    <img class='logo' src="/images/4000_4_10.png">
 
-  </header>
-  <nav>
+ <nav>
     <a href="/">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
@@ -25,6 +23,9 @@
     <a href="/login">Login</a>
     {{/if}}
   </nav>
+
+  </header>
+  
   <main>
     {{!-- <aside>
       <h2>Enjoy the galleries!</h2>
