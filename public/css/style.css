@@ -28,9 +28,8 @@ body {
   justify-content: center;
   flex-grow: 4;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   background-color: var(--tertiary);
- 
 }
 
 header {
@@ -42,17 +41,26 @@ header {
   color: var(--light);
 }
 
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color 0.1s;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
 #genreHB {
   letter-spacing: 1px;
   text-shadow: 2px 2px 5px var(--secondary);
   background-color: #5b2e85;
   font-size: 20px;
   color: white;
-}
-
-a {
-  color: var(--dark);
-  text-decoration: none;
 }
 
 a:visited {
@@ -75,27 +83,14 @@ main {
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  align-content: flex-end;
+ margin-top: 6%;
   background-color: var(--secondary);
 }
 
-nav a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-nav a:hover {
-  border-radius: 10px;
-  color: white;
-}
 .logo{
-height: 150%;
-width: 150%;
-margin-left: 5%;
+height: 10%;
+width: 10%;
+margin-left: 0%;
 }
 
 .games {
@@ -108,35 +103,11 @@ margin-left: 5%;
   align-items: center;
 }
 
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 100%;
-  transition: color 0.1s;
-  margin-left: 16px;
-}
-
 img {
   height: auto;
   width: 300px;
   height: 400px;
 }
-
-/* .painting {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-} */
-
-/* .painting-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
-} */
 
 /* All the Games */
 .card {
@@ -155,8 +126,6 @@ img {
   padding: 10px;
   border: 3px solid;
   border-radius: var(--border-radius);
-  /* border-style: double; */
-  /* border-width: thick; */
   background-color:#5b2e85;
   color: var(--light);
 }
@@ -170,12 +139,10 @@ img {
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
-
 .card-body {
   font-size: 1.4rem;
   text-align: center;
   font-weight: bold;
-  
 }
 
 .gallery-name {
