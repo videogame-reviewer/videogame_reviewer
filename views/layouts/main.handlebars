@@ -5,27 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Remote Reviewer</title>
-  <link rel="icon" href="../../public/favicon.ico">
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
   <header>
-    <h1 id ="mainHeader">Remote Reviews</h1>
     <img class='logo' src="/images/4000_4_10.png">
-
- <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
-
+    <h1 id ="mainHeader">Remote Reviews</h1>
+    <nav>
+      <a href="/">Home</a>
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style">Logout</button>
+      {{else}}
+      <a href="/login">Login</a>
+      {{/if}}
+    </nav>
   </header>
-  
+
   <main>
     {{!-- <aside>
       <h2>Enjoy the galleries!</h2>
