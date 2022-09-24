@@ -17,17 +17,20 @@
     <div class="gButtons">
       <button onclick = "window.location = '{{game.purchaselink}}', '_blank'"
  class="buy">Press here to buy!</button>
-      <button class="makeReview">Leave a review.</button>
+
     </div>
   </section>
 
   <section class="re">
-    <div class="leaveReview">
-      <h5 class="gallery-name">What do ya think about it?</h5>
-      <input type="text" name="ReviewText">
-    </div>
+    <form class="leaveReview">
+      <label class="gallery-name">What do ya think about it?</label>
+      <input type="text" name="ReviewText" id="review-input">
+      <button class="makeReview" type="submit">Leave a review.</button>
+    </form>
+    {{reviews-details}}
   </section>
     {{else}}
       <a href="/login"></a>
     {{/if}}
 </section>
+<script src="../js/review.js"></script>
