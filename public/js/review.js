@@ -2,17 +2,19 @@ const reviewFormHandler = async (event) => {
   event.preventDefault();
 
   const comment = document.querySelector('#review-input').value.trim();
-  const currentGame = 1;
+  const currentGame = window.location.toString().split('/')[
+    window.location.toString().split('/').length - 1
+  ];
 
-  if (comment && currentGame) {
+  if (comment) {
     const response = await fetch('/game/:id', {
       method: 'POST',
-      body: JSON.stringify({ comment, currentGame }),
+      body: JSON.stringify({ comment, currentGame, user_id, game_id }),
       headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
-      document.location.replace('/');
+       document.location.reload();
     } else {
       alert('Failed to leave review.');
     }
