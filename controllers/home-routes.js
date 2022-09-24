@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const { Game, Review } = require('../models');
+const { Game, Review, User } = require('../models');
 const withAuth = require('../utils/auth')
+const sequelize = require('../config/connection');
 
 // GET all galleries for homepage
 router.get('/', async (req, res) => {
@@ -37,15 +38,17 @@ router.get('/game/:id', async (req, res) => {
     // If the user is logged in, allow them to view the gallery
     try {
       const dbGameData = await Game.findByPk(req.params.id, {
-        // include: [
-        //   {
-        //     model: Reviews,
-        //     attributes: [
-        //       'id',
-        //       'description',
-        //     ],
-        //   },
-        // ],
+        include: [
+          {
+            model: Review,
+            attributes: [
+              'id',
+              'comment',
+              'user_id',
+              'game_id'
+            ],
+          },
+        ],
       });
       const game = dbGameData.get({ plain: true });
       res.render('game', { game, loggedIn: req.session.loggedIn });
