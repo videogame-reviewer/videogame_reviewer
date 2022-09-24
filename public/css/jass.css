@@ -425,8 +425,12 @@ a {
 }
 
 a:hover {
-  color: #065b83;
+  color: white;
   text-decoration: underline;
+}
+
+.btn-no-style{
+  padding-left: 10%;
 }
 
 /* HEIGHT / WIDTH UTILS */
