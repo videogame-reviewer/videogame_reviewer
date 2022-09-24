@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Game, Reviews } = require('../models');
+const { Game, Review } = require('../models');
 
 // GET all galleries for homepage
 router.get('/', async (req, res) => {
@@ -56,18 +56,20 @@ router.get('/game/:id', async (req, res) => {
 );
 
 // GET one painting
-router.get('/painting/:id', async (req, res) => {
+router.post('/game/:id', async (req, res) => {
   // If the user is not logged in, redirect the user to the login page
   // if (!req.session.loggedIn) {
   //   res.redirect('/login');
   // } else {
     // If the user is logged in, allow them to view the painting
     try {
-      const dbPaintingData = await Painting.findByPk(req.params.id);
+    const newReview = await Review.create({
+      ...req.body,
+      game_id: req.params.id,
+      user_id: req.session.user_id
+    });
 
-      const painting = dbPaintingData.get({ plain: true });
-
-      res.render('painting', { painting, loggedIn: req.session.loggedIn });
+    res.status(200).json(newReview);
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
