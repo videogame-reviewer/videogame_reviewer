@@ -4,6 +4,7 @@ const withAuth = require('../utils/auth')
 
 // GET all galleries for homepage
 router.get('/', async (req, res) => {
+  console.log('logged in? home',req.session.loggedIn);
   try {
     const dbGameData = await Game.findAll({
       // include: [
@@ -29,7 +30,8 @@ router.get('/', async (req, res) => {
 });
 
 // GET one gallery
-router.get('/game/:id', withAuth ,async (req, res) => {
+router.get('/game/:id' ,async (req, res) => {
+  console.log('logged in? one gameID',req.session.loggedIn);
   // If the user is not logged in, redirect the user to the login page
   // if (!req.session.loggedIn) {
   //   res.redirect('/login');
@@ -44,6 +46,12 @@ router.get('/game/:id', withAuth ,async (req, res) => {
               'comment',
             ],
           },
+          // {
+          //   model: User,
+          //   attributes: [
+          //     'username',
+          //   ]
+          // }
         ],
       });
       const game = dbGameData.get({ plain: true });
@@ -77,7 +85,7 @@ router.post('/game/:id', async (req, res) => {
 );
 
 router.get('/login', (req, res) => {
-  console.log();
+  console.log('logged in? are we ?',req.session.loggedIn);
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
