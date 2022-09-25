@@ -15,7 +15,7 @@ const reviewFormHandler = async (event) => {
     });
     console.log('hello', response.json());
     if (response.ok) {
-      document.location.replace('/');
+      document.location.reload('/');
       console.log('hello2', response.json())
     } else {
       alert('Failed to leave review.');

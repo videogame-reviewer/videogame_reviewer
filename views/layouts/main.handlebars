@@ -7,18 +7,21 @@
   <title>Remote Reviewer</title>
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Press+Start+2P&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <img class='logo' src="/images/4000_4_10.png">
-    <h1 id ="mainHeader">Remote Reviews</h1>
+    <h1 id ="mainHeader">Remote Reviewer</h1>
     <nav>
-      <a href="/">Home</a>
+      <a href="/" class="btn-no-style">Home</a>
       {{#if loggedIn}}
       <button id="logout" class="btn-no-style">Logout</button>
       {{else}}
-      <a href="/login"> Login</a>
+      <a href="/login" class="btn-no-style"> Login</a>
       {{/if}}
     </nav>
   </header>
