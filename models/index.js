@@ -10,6 +10,14 @@ Review.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
+// User.belongsToMany(Game, {
+//   through: {model: Review},
+// });
+
+// Game.belongsToMany(User, {
+//   through: {model: Review},
+// });
+
 Game.hasMany(Review, {
   foreignKey: 'game_id',
 });

@@ -32,6 +32,7 @@ router.get('/', async (req, res) => {
 // GET one gallery
 router.get('/game/:id' ,async (req, res) => {
   console.log('logged in? one gameID',req.session.loggedIn);
+  console.log(req.session.user_id)
   // If the user is not logged in, redirect the user to the login page
   // if (!req.session.loggedIn) {
   //   res.redirect('/login');
@@ -40,18 +41,7 @@ router.get('/game/:id' ,async (req, res) => {
     try {
       const dbGameData = await Game.findByPk(req.params.id, {
         include: [
-          {
-            model: Review,
-            attributes: [
-              'comment',
-            ],
-          },
-          // {
-          //   model: User,
-          //   attributes: [
-          //     'username',
-          //   ]
-          // }
+          Review
         ],
       });
       const game = dbGameData.get({ plain: true });
