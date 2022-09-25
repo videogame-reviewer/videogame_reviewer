@@ -1,14 +1,14 @@
 <main id="full-game-main">
   <section class="full-game-description">
     <section class="container">
-      <h3 class="game-name">{{game.name}}<br> <span id="genreHB">Genre: {{game.genre}}</span></h3>
+      <h3 class="game-name">{{game.name}}<br></h3>
       <img src="/images/{{game.filename}}" alt="{{game.[0].description}}">
         <div class="gButtons">
           <button onclick="window.location = '{{game.purchaselink}}', '_blank'"  class="buy">Press here to buy!</button>
         </div>
     </section>
     <section id="game-description">
-          <div class="game-name">{{game.description}}</div>
+          <div class="game-description">{{game.description}}<span id="genreHB"><br><hr>Genre: {{game.genre}}</span></div>
     </section>
   </section>
 
@@ -17,11 +17,10 @@
     <section class="top">
     </section>
 
-    <section class="re">
+    <section class="comments-section">
       <form class="leaveReview">
-        <label class="game-name">What do ya think about it?</label>
-        <input type="text" name="ReviewText" id="review-input" data-game-id={{game.id}}>
-        <button class="makeReview" type="submit">Leave a review.</button>
+        <input class="test" type="text" name="ReviewText" id="review-input" data-game-id={{game.id}}>
+        <button class="makeReview" type="submit">Leave a review</button>
       </form>
       {{reviews-details}}
           {{#each game.reviews as |reviews|}}
