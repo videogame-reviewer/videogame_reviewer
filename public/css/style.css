@@ -47,6 +47,21 @@ header {
   font-family: 'Source Code Pro', monospace;
 }
 
+#full-game-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-game-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-description {
+  display: flex;
+  justify-content: center;
+}
+
 .buy {
   border: 2px groove rgb(98, 14, 112);
   margin-top: 5px;
