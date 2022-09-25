@@ -1,6 +1,7 @@
 const router = require('express').Router();
 // Import the Comment model for our routes
-const { Review } = require('../../models');
+const { Review, User } = require('../../models');
+// const { findByPk } = require('../../models/User');
 
 // Users shouldn't post or update comments if they are not loggedIn
 const withAuth = require('../../utils/auth');
@@ -19,10 +20,12 @@ router.post('/:gameId', withAuth, async (req, res) => {
     console.log('req.body', req.body);
     console.log('req.params', req.params);
     try {
+      const userData = await User.findByPk(req.session.user_id);
         const newReview = await Review.create({
           ...req.body,
           game_id: req.params.gameId,
           user_id: req.session.user_id,
+          username: userData.username,
         });
         const updateReview = newReview.get({ plain: true });
         console.log('backend', updateReview);

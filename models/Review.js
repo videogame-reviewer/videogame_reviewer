@@ -20,6 +20,10 @@ Review.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     game_id: {
       type: DataTypes.INTEGER,
       references: {

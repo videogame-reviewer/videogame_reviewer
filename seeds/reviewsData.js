@@ -26,12 +26,12 @@ const reviewsdata = [
     comment: 'Two beach chairs under a beach umbrella on the beach.',
     user_id: 2,
   },
-  {
-    game_id: 2,
-    // filename: '05-beach-sunrise.jpg',
-    comment: 'Sun setting in the horizon with waves lapping the shore.',
-    user_id: 4,
-  },
+  // {
+  //   game_id: 2,
+  //   // filename: '05-beach-sunrise.jpg',
+  //   comment: 'Sun setting in the horizon with waves lapping the shore.',
+  //   user_id: 4,
+  // },
   {
     game_id: 3,
     // filename: '06-fall-colors.jpg',

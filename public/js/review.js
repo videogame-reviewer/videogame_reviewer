@@ -13,7 +13,7 @@ const reviewFormHandler = async (event) => {
       }),
       headers: { 'Content-Type': 'application/json' },
     });
-    console.log('hello', response)
+    console.log('hello', response.json());
     if (response.ok) {
       document.location.replace('/');
       console.log('hello2', response.json())
