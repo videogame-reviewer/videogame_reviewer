@@ -15,20 +15,22 @@ router.get('/', (req, res) => {
         })
 });
 
-router.post('/', withAuth, (req, res) => {
-    if (req.session) {
-        // Builds a new comment model instance and saves it
-        Review.create({
-                comment: req.body.comment,
-                currentGame: req.body.currentGame,
-                user_id: req.session.user_id,
-            })
-            .then(dbReviewData => res.json(dbReviewData))
-            .catch4( err => {
-                console.log(err);
-                res.status(400).json(err);
-            })
-    }
+router.post('/:gameId', withAuth, async (req, res) => {
+    console.log('req.body', req.body);
+    console.log('req.params', req.params);
+    try {
+        const newReview = await Review.create({
+          ...req.body,
+          game_id: req.params.gameId,
+          user_id: req.session.user_id,
+        });
+        const updateReview = newReview.get({ plain: true });
+        console.log('backend', updateReview);
+      res.status(200).json(updateReview);
+      } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+      }
 });
 
 
