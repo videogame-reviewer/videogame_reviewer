@@ -15,7 +15,7 @@ const sess = {
   secret: 'Super secret secret',
   cookie: {
         // maxAge sets the maximum age for the session to be active. Listed in milliseconds.
-        maxAge: 3600,
+        maxAge: 365 * 24 * 60 * 60 * 1000,
         // httpOnly tells express-session to only store session cookies when the protocol being used to connect to the server is HTTP.
         httpOnly: true,
         // secure tells express-session to only initialize session cookies when the protocol being used is HTTPS. Having this set to true, and running a server without encryption will result in the cookies not showing up in your developer console.
