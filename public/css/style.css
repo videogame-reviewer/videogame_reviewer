@@ -11,13 +11,13 @@
 }
 
 body {
-  font-family: 'Source Code Pro', monospace;
+  font-family:'Source Code Pro', monospace;
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   justify-content: flex-start;
-  background-color: var(--quatrinary);
+  background-color:black;
 }
 
 #mainHeader{
@@ -27,30 +27,33 @@ body {
   flex-grow: 4;
   color: var(--light);
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-grow: 4;
   font-weight: lighter;
   font-size: 40px;
   background-color: var(--tertiary);
   font-family: 'Source Code Pro', monospace;
-  line-height: 2;
+  /* line-height: 2; */
 
 }
-
 
 header {
   display: flex;
   flex-direction: row;
-  padding: 4px;
+  border-color: #5b2e85;
   text-align: center;
   background: var(--primary);
   color: var(--light);
+  font-family: 'Source Code Pro', monospace;
 }
 
 .buy {
-  height: 25px;
-  width: 225px;
-  font-size: 100%;
+  border: 2px groove rgb(98, 14, 112);
+  margin-top: 5px;
+  background-color: #5b2e85;
+  color: white;
+  width: 300px;
+  text-align: center;
 }
 
 .btn-no-style {
@@ -69,13 +72,22 @@ header {
   align-items: center;
 }
 
+/* game page game title */
 #genreHB {
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 5px var(--secondary);
-  background-color: #5b2e85;
+  display: flex;
+  justify-content: center;
   font-size: 20px;
+  text-align: center;
   color: white;
-  text-align: left;
+}
+
+.game-name {
+  border: 2px groove rgb(98, 14, 112);
+  margin-bottom: 5px;
+  background-color: #5b2e85;
+  color: white;
+  width: 300px;
+  text-align: center;
 }
 
 a:visited {
@@ -143,9 +155,10 @@ img {
   margin: 0 0 20px 0;
   flex: 0 0 50%;
   width: 50%;
-  padding: 10px;
-  border: 3px solid;
-  border-radius: var(--border-radius);
+  padding: 20px;
+  border:solid;
+  border-color: black;
+  border-radius:10px;
   background-color:#5b2e85;
   color: var(--light);
 }
@@ -166,21 +179,6 @@ img {
   color: var(--light);
   font-family: 'Source Code Pro', monospace;
 }
-
-
-.game-name {
-  text-align: left;
-  text-shadow: 2px 2px 5px var(--secondary);
-  border: 2px groove rgb(98, 14, 112);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
-  background-color: #5b2e85;
-  color: white;
-}
-
-
 
 /* LAYOUT */
 .container {
