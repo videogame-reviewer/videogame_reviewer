@@ -7,10 +7,11 @@
   --dark: #182c23;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
+  
 }
 
 body {
-  font-family: Arial;
+  font-family: 'Source Code Pro', monospace;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -22,15 +23,20 @@ body {
 #mainHeader{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-grow: 4;
   color: var(--light);
   display: flex;
   justify-content: center;
   flex-grow: 4;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 40px;
   background-color: var(--tertiary);
+  font-family: 'Source Code Pro', monospace;
+  line-height: 2;
+
 }
+
 
 header {
   display: flex;
@@ -39,6 +45,12 @@ header {
   text-align: center;
   background: var(--primary);
   color: var(--light);
+}
+
+.buy {
+  height: 25px;
+  width: 225px;
+  font-size: 100%;
 }
 
 .btn-no-style {
@@ -47,12 +59,14 @@ header {
   padding: 5px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 100%;
+  font-size: 130%;
   transition: color 0.1s;
   color: white;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #genreHB {
@@ -61,10 +75,13 @@ header {
   background-color: #5b2e85;
   font-size: 20px;
   color: white;
+  text-align: left;
 }
 
 a:visited {
   color: inherit;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -74,6 +91,8 @@ header {
   text-align: center;
   background: var(--primary);
   color: var(--light);
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -83,7 +102,6 @@ main {
 }
 
 nav {
- margin-top: 6%;
   background-color: var(--secondary);
 }
 
@@ -91,6 +109,8 @@ nav {
 height: 10%;
 width: 10%;
 margin-left: 0%;
+justify-content: center;
+align-items: center;
 }
 
 .games {
@@ -141,15 +161,17 @@ img {
 }
 .card-body {
   font-size: 1.4rem;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
+  color: var(--light);
+  font-family: 'Source Code Pro', monospace;
 }
 
-.gallery-name {
-  text-transform: uppercase;
-  letter-spacing: 3px;
+
+.game-name {
+  text-align: left;
   text-shadow: 2px 2px 5px var(--secondary);
-  border: 10px groove var(--light);
+  border: 2px groove rgb(98, 14, 112);
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 100px;
@@ -157,6 +179,8 @@ img {
   background-color: #5b2e85;
   color: white;
 }
+
+
 
 /* LAYOUT */
 .container {
