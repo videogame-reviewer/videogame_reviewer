@@ -19,8 +19,9 @@
 
     <section class="comments-section">
       <form class="leaveReview">
-        <input class="test" type="text" name="ReviewText" id="review-input" data-game-id={{game.id}}>
-        <button class="makeReview" type="submit">Leave a review</button>
+        <input type="text" name="ReviewText"
+        placeholder="Please type your review here..." id="review-input" data-game-id={{game.id}}>
+        <button class="makeReview" type="submit">Submit</button>
       </form>
       {{reviews-details}}
           {{#each game.reviews as |reviews|}}
