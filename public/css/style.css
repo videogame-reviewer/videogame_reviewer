@@ -202,12 +202,11 @@ img {
   width: 300px;
   height: 400px;
 }
-.homeIMG:hover {
+img:hover {
   color: #5b2e85;
   border: #5b2e85 solid 1px;
   background:#5b2e85;
-  filter: opacity(80%);
-  transform: scale(1.03);
+  filter: opacity(88%);
 }
 
 /* All the Games */
