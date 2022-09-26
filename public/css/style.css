@@ -7,11 +7,12 @@
   --dark: #182c23;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
+  --font-family: 'Rubik', sans-serif;
   
 }
 
 body {
-  font-family:rubik;
+  font-family: 'Rubik', sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -27,14 +28,10 @@ body {
   flex-grow: 4;
   color: var(--light);
   display: flex;
-  /* justify-content: center; */
   flex-grow: 4;
-  font-weight: lighter;
   font-size: 40px;
   background-color: var(--tertiary);
-  font-family: 'Source Code Pro', monospace;
-  /* line-height: 2; */
-
+  font-family: 'Rubik', sans-serif;
 }
 
 header {
@@ -64,7 +61,7 @@ header {
   font-size: larger;
   background-color: #5b2e85;
   border: 2px groove rgb(98, 14, 112);
-  margin-left: 4%;
+  margin-left: 3%;
   margin-top: 45px;
   height: 400px;
   padding: 50px;
@@ -90,6 +87,7 @@ header {
   color: white;
   width: 300px;
   text-align: center;
+  font-size: 1rem;
 }
 /* Input section */
 #review-input{
@@ -98,11 +96,11 @@ header {
 }
 
 .makeReview{
-  flex-direction: row;
-  padding-top: 10px;
-  height: 8rem;
-  width:5rem;
-  color: #5b2e85;
+flex-direction: row;
+padding-top: 10px;
+height: 8rem;
+width:5rem;
+color: #5b2e85;
 }
 .makeReview:hover{
 opacity:80%;
@@ -116,6 +114,16 @@ color: white;
 
 .leaveReview{
   margin-top: 2%;
+}
+
+/* Reviews/Comments */
+.game-comments{
+font-family: 'Rubik', sans-serif;
+background-color:#7b45ad;
+font-size: medium;
+}
+#card-comments{
+  border: 3px groove rgb(98, 14, 112);
 }
 
 .btn-no-style {
@@ -132,6 +140,7 @@ color: white;
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-family: 'Rubik', sans-serif;
 }
 
 .game-name {
