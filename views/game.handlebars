@@ -4,7 +4,7 @@
       <h3 class="game-name">{{game.name}}<br></h3>
       <img src="/images/{{game.filename}}" alt="{{game.[0].description}}">
         <div class="gButtons">
-          <button onclick="window.location = '{{game.purchaselink}}', '_blank'"  class="buy">Press here to buy!</button>
+          <button onclick="window.open('{{game.purchaselink}}')"  class="buy">Press here to buy!</button>
         </div>
     </section>
     <section id="game-description">
