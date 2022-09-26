@@ -2,63 +2,69 @@ const { Review } = require('../models');
 
 const reviewsdata = [
   {
-    game_id: 1,
-    // filename: '01-blossoming-apricot.jpg',
+    game_id: 39,
     comment:
-      'Great Game.',
+      'Great Game loved the gameplay',
     user_id: 1,
+    username: 'Sal'
   },
   {
-    game_id: 1,
-    // filename: '02-cosmos-flowers.jpg',
+    game_id: 39,
     comment: 'An all time classic!.',
     user_id: 2,
+    username: 'Brandon'
   },
   {
-    game_id: 2,
-    // filename: '03-sand-sea-summer.jpg',
-    comment: 'Sandy beach with the blue sea and sky in the background.',
+    game_id: 39,
+    comment: 'you gotta love batman games!',
     user_id: 4,
+    username: 'Bob'
   },
   {
-    game_id: 2,
-    // filename: '04-beach-chairs.jpg',
-    comment: 'Two beach chairs under a beach umbrella on the beach.',
+    game_id: 41,
+    comment: 'i love the action its so upclose and fun',
     user_id: 2,
+    username: 'Tony'
   },
-  // {
-  //   game_id: 2,
-  //   // filename: '05-beach-sunrise.jpg',
-  //   comment: 'Sun setting in the horizon with waves lapping the shore.',
-  //   user_id: 4,
-  // },
   {
-    game_id: 3,
-    // filename: '06-fall-colors.jpg',
+    game_id: 41,
+    comment: 'the action sequences are great 10/10 game in my opinion',
+    user_id: 2,
+    username: 'Remy'
+  },
+  {
+    game_id: 41,
+    comment: 'THIS GAME IS AMAZING ITS MY LIFE',
+    user_id: 2,
+    username: 'SifuLover88'
+  },
+  {
+    game_id: 49,
     comment:
-      'Trees with red, orange, yellow leaves reflected on a still lake.',
+      'I stay up endless hours playing this game! Most fun mario game in a long time!',
     user_id: 5,
+    username: 'Sally'
   },
   {
-    game_id: 3,
-    // filename: '07-autumn-mountains.jpg',
+    game_id: 49,
     comment:
-      'Mountains with red and yellow leaves against a background of hazy rolling hills.',
-    user_id: 2,
+      'Meh its okay, ive played better games',
+    user_id: 5,
+    username: 'Wood'
   },
   {
-    game_id: 4,
-    // filename: '08-frozen-river.jpg',
+    game_id: 49,
     comment:
-      'Trees with white frozen branches reflected on a frozen river against a light pink sky.',
+      'its an okay game, doesnt live up to the last game but its still really fun :D',
     user_id: 1,
+    username: 'Lucy'
   },
   {
-    game_id: 4,
-    // filename: '09-winter-home.jpg',
+    game_id: 49,
     comment:
-      'Log cabin blanketed in heavy white snow with tall snow covered pine trees in the background.',
+      'I LOVE PLAYING THIS GAME WITH FREINDS THEY MAKE THE BEST LEVELS GREAT GAME CANT STOP PLAYING IT',
     user_id: 3,  
+    username: 'Britt'
   },
 ];
 
