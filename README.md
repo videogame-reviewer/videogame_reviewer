@@ -2,24 +2,19 @@
 
 # Remote Reviewer
 ---
-Inside the master branch we have all the code for the Index, CSS and Javascript plus our images. We seperated them by folders for ease as well.
+Inside the master branch we have all the code for the Handlebars, JavaScript, CSS and our SQL stuff.
 ---
-Some things we struggled with was the flex-box with our main objects in the page. We had our car list behind our wheel and it was a huge mess. After a while of researching between
-three of us we figured out we needed to add one small line of code. We struggle adding our APIS and not being able to find one for the Chinese Zodiac so we had to code in the Zodiac 
-and find an API for the images instead since that was still an issue we were running into since our car information API didn't load pictures. Another thing we couldn't figure out
-for a while was adding and making a modal and having it pop up after an error in the input, we eventually found a refrence and that saved out day.
+Some things we struggled with were making our relationships and our wireframe. We kept thinking we had it down but kept seeing flaws in what we were making. Eventually with all of us putting our heads together we came togther and got it down. We struggled right off the bat with our idea of using an API for the video games data and pictures, either we couldn't get an API that consistently pulled the data we wanted or we couldn't make the API's that could pull them actually work. We were close to maybe doing another idea but then we decided to buckle down and hard code in the data for the games and added in the pictures which took a lot longer than what we anticipated. One last major struggle we had to overcome was near the end almost the last day. We couldn't get our reviews to pop up on our page. We could get the buttons to work but nothing would save in our database besides the comment. We were missing the two biggest things we needed, the user id and the game id. Eventually after hours of struggled we gained help from Lori who helped turn around our entire thinking proccess over the span of multiple hours during the weekend. We eventually after working through it and changing a lot of things and reworking our relationships one last time figured it out. 
 ---
-The LunarTuner app is working, you insert your birthyear alongside your name in the input fields. If it's an inncorrect year it will tell you to input a correct year. Next you either press
-enter or click the spin button then our wheel spins and shows you your Chinese Zodiac! After that a list of users (if any yet) show up under the input fields and a list of cars specific to
-your Chinese Zodiac appear on the right side of your screen!
+The Remote Review app is working! You start buy being on the landing page showing all our games. Next you have the option of logging in/signing up or you can browse the games and find one you really like. Next you have to log/sign up so you can see the reviews people left on the games. After that you can browse the entire app freely seeing all the reviews people have left. Without signing up you can also see the description though and the button the purchase the game if you think you'd enjoy it. Not to menion you can also leave your own review on games you played before for other users to see!
 ---
 Here are some pictures! 
-![Screenshot1]()
-![Screenshot2]()
-![Screenshot3]()
+![Screenshot1](https://snipboard.io/ZAkBUb.jpg)
+![Screenshot2](https://snipboard.io/uveMl0.jpg)
+![Screenshot3](https://snipboard.io/sD0RAP.jpg)
 ---
-[LunarTuner Working Website!]()
-[LunarTuner Repo!](https://github.com/videogame-reviewer/videogame_reviewer)
+[Remote Reviewer Working Website!](https://remotereviewer.herokuapp.com/)
+[Remote Reviewer Repo!](https://github.com/videogame-reviewer/videogame_reviewer)
 
 This is the link to the working website.
 ---
